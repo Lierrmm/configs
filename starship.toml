@@ -1,0 +1,21 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➡️](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Dotnet
+[dotnet]
+detect_extensions = ["csproj", "fsproj", "xproj", "sln"]
+
+# High Memory Usage
+[memory_usage]
+disabled = false	
+threshold = 75
+format = "$symbol [${ram}( | ${swap})]($style) "
+
+# Time
+[time]
+disabled = false
+format = "[$time]($style) "
